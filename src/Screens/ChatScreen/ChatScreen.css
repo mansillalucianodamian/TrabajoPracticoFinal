@@ -1,0 +1,143 @@
+.chat_container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+.contact_container{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: #161717;
+}
+
+.contact_header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: 64px;
+    width: 100%;
+    background-color: #161717;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.title_principal{
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+.message_container {
+    background-color: #2e2f2f;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    gap: 12px;
+    flex: 2;
+}
+.message_header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: 64px;
+    width: 100%;
+    background-color: #161717;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 174px;
+    color: white;
+    font-size: 14px;
+    font-weight: 200;
+    padding: 0 10px;
+}
+.message_list{
+    flex-grow: 1;
+    overflow-y: auto;  
+    padding: 10px;
+
+}
+.new_message_form{
+    position: sticky;
+    bottom: 0;
+    z-index: 100;
+    width: 100%;
+    height: 64px;
+    background-color: #161717;
+    padding: 8px 16px; /* Para algo de aire */
+}
+.contact_info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+.contact_info img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;    
+    color: white;
+    font-size: 12px;
+    font-weight: 200;
+}
+.options-wrapper{
+    position: relative;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #1d1f1f;
+    border-radius: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0 0;
+    width: 180px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+    cursor: pointer;
+
+    transition: background-color 0.2s;
+}
+
+.dropdown-menu li:last-child {
+    border-bottom: none;
+}
+
+.dropdown-menu li:hover {
+    background-color: #2e2f2f;
+    border-radius: 10px;
+}
+.contact_info h1{
+ /*    color: white; */
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+
+
+.message_container h1{
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+
+}

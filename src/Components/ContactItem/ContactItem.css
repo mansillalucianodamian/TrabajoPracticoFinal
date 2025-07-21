@@ -1,0 +1,51 @@
+.contact_item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 8px 10px;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+}
+.contact_left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.contact_information{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2px;
+}
+.contact_status{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 5px;
+}
+.contact_last_connection{
+    font-size: 9px;
+    font-weight: 100;
+    color: #a2a299;
+}
+.contact_name{
+    font-size: 16px;
+    font-weight: 400;
+}
+.contact_description{
+    font-size: 14px;
+    font-weight: 200;
+    color: #a2a299;
+}
