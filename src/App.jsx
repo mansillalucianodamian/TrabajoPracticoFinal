@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import { Route, Routes } from 'react-router'
-import ContactScreen from './Screens/ContactScreen/ContactSCreen'
+import ContactScreen from './Screens/ContactScreen/ContactScreen'
 import ChatSCreen from './Screens/ChatScreen/ChatScreen'
 
 const App = () => {
