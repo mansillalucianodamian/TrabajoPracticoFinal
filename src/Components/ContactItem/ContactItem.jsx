@@ -20,7 +20,7 @@ const ContactItem = ({ contact }) => {
 
       <div className='contact_status'>
         <span className='contact_last_connection'>{contact.lastConnection}</span>
-        <span><i class="bi bi-pin"></i></span>
+        <span><i className="bi bi-pin"></i></span>
         
       </div>
 

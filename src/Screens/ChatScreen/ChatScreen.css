@@ -35,11 +35,13 @@
 }
 
 .sidebar_icons_top {
+    background-color: none;
+    border: none;
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
-
+    color: white;
 }
 
 .sidebar_bottom {
@@ -214,14 +216,6 @@
     border-radius: 50%;
 }
 
-.buttons {
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    color: white;
-    font-size: 12px;
-    font-weight: 200;
-}
 
 .options-wrapper {
     position: relative;

@@ -61,10 +61,10 @@ const ChatSCreen = () => {
             <div className="sidebar">
                 <div className="sidebar_header">
                     <div className="sidebar_icons_top">
-                        <button title="Chats"><i class="bi bi-chat-right-text"></i></button>
-                        <button title="Estado"><i class="bi bi-chat-right-text"></i></button>
-                        <button title="Canales"><i class="bi bi-chat-right-text"></i></button>
-                        <button title="Comunidad"><i class="bi bi-chat-right-text"></i></button>
+                        <i className="bi bi-chat-right-text"></i>
+                        <i className="bi bi-disc"></i>
+                        <i className="bi bi-chat-text"></i>
+                        <i className="bi bi-people"></i>
                     </div>
                     <div className="sidebar_bottom">
                         <i class="bi bi-gear"></i>

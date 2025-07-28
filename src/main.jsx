@@ -7,8 +7,8 @@ import ContactContextProvider from './Context/ContactContext.jsx'
 createRoot(document.getElementById('root')).render(
     // BrowserRouter:Nos habilita a usar las herramientas de react router
     <BrowserRouter>
-        <ContactContextProvider>
-            <App />
-        </ContactContextProvider>
+            <ContactContextProvider>
+                <App />
+            </ContactContextProvider>
     </BrowserRouter>
 )
