@@ -1,12 +1,31 @@
-.message_wapper{
-    display: flex;
-    justify-content: flex-end; /* si es emisor, si es receptor tengo que ponerlo a la izquierda */
+.message_wrapper {
+	display: flex;
+	margin: 5px 10px;
+}
+
+.message_wrapper.enviado {
+	justify-content: flex-end;
+}
+
+.message_wrapper.recibido {
+	justify-content: flex-start;
 }
 .message_bubble {
     display: flex;
     flex-direction: row;
     justify-content: center;
     background-color: #144d37;
+    border-radius: 10px;
+    gap:5px;
+    max-width: 80%;
+    padding: 6px 7px 8px 9px;
+    font-weight: 400;
+}
+.message_wrapper.recibido .message_bubble {
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #242626;
     border-radius: 10px;
     gap:5px;
     max-width: 80%;
@@ -41,4 +60,8 @@
     font-size: 11px;
     display: flex;
     align-items: end;
+}
+
+.message_wrapper.recibido .delete_message {
+	display: none; /* Ocultar botón en mensajes recibidos */
 }
