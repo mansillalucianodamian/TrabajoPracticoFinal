@@ -17,8 +17,8 @@
     gap: 10px;
 }
 .avatar{
-    width: 35px;
-    height: 35px;
+    width: 49px;
+    height: 49px;
     border-radius: 50%;
 }
 .contact_information{
@@ -36,16 +36,18 @@
     gap: 5px;
 }
 .contact_last_connection{
-    font-size: 9px;
-    font-weight: 100;
-    color: #a2a299;
+    color: #8696a0;
+    font-size: 12px;
+    font-weight: 300;
 }
 .contact_name{
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 700;
 }
 .contact_description{
     font-size: 14px;
     font-weight: 200;
-    color: #a2a299;
+    color: #8696a0;
+    white-space: nowrap;
+    overflow: hidden;
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import './NewMessageForm.css'
+import ICONS from '../../constanst/Icons'
 
 const NewMessageForm = ({addNewMessage}) => {
     const handleSubmitSendMessageForm = (event) => {
@@ -14,11 +15,11 @@ const NewMessageForm = ({addNewMessage}) => {
     return (
         <form
             className='message_form' onSubmit={handleSubmitSendMessageForm}>
-                <label htmlFor="message"><i class="bi bi-plus-lg"></i></label>
+                <label htmlFor="message"><ICONS.Plus className='icon_plus'/></label>
                 <div className='message_input'>
                     <input type="text" placeholder='Escribe un mensaje' id='message' name='message' required />
                 </div>
-                <button type='submit'><i class="bi bi-send-fill"></i></button> 
+                <button type='submit'><ICONS.Send className='icon_send'/></button> 
         </form>
     )
 }

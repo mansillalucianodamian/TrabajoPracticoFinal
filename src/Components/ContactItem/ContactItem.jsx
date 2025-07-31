@@ -10,7 +10,6 @@ const ContactItem = ({ contact }) => {
         <div className='avatar_conteiner'>
           <img className='avatar' src={contact.avatar} alt={contact.name} />
         </div>
-
         <div className='contact_information'>
           <h2 className='contact_name'>{contact.name}</h2>
           <span className='contact_description'>{contact.description}</span>
@@ -20,8 +19,7 @@ const ContactItem = ({ contact }) => {
 
       <div className='contact_status'>
         <span className='contact_last_connection'>{contact.lastConnection}</span>
-        <span><i className="bi bi-pin"></i></span>
-        
+  
       </div>
 
     </Link>

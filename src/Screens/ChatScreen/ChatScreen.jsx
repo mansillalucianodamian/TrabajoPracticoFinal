@@ -5,6 +5,8 @@ import { useParams } from "react-router"
 import { getContactById, getContactList } from '../../services/contactService'
 import ContactList from '../../Components/ContactList/ContactList'
 import "./ChatScreen.css"
+import ICONS from "../../constanst/Icons"
+import ContactScreen from "../ContactScreen/ContactScreen"
 
 
 
@@ -58,70 +60,22 @@ const ChatSCreen = () => {
 
     return (
         <div className="chat_container">
-            <div className="sidebar">
-                <div className="sidebar_header">
-                    <div className="sidebar_icons_top">
-                        <i className="bi bi-chat-right-text"></i>
-                        <i className="bi bi-disc"></i>
-                        <i className="bi bi-chat-text"></i>
-                        <i className="bi bi-people"></i>
-                    </div>
-                    <div className="sidebar_bottom">
-                        <i class="bi bi-gear"></i>
-                        <img src={contact_selected.avatar} alt={contact_selected.name} width={30} />
-                    </div>
-                </div>
-            </div>
-            <div className="contact_container ">
-                <div className="contact_header">
-                    <h1 className="title_principal">WhatsApp</h1>
-                </div>
-                <div className="contact_search">
-                    <i className="bi bi-search"></i>
-                    <input
-                        type="text"
-                        placeholder="Buscar un chat o iniciar uno nuevo"
-                        value={searchTerm}
-                        onChange={(e) => setSearchTerm(e.target.value)}
-                    />
-                </div>
-                <div className="contact_filters">
-                    <button className="filter_button">Todos</button>
-                    <button className="filter_button">No leídos</button>
-                    <button className="filter_button">Favoritos</button>
-                    <button className="filter_button">Grupos</button>
-                </div>
-                <div className="contact_list">
-                    <ContactList contacts={filteredContacts} />
-                </div>
-            </div>
-            <div className="message_container contact_background">
+            <ContactScreen title="WhatsApp" showPerfil={false} />
+            <div className="message_container">
                 <div className="message_header">
                     <div className="contact_info">
+                        <ICONS.ArrowLeft className="buttons_type button_left" />
                         <img src={contact_selected.avatar} alt={contact_selected.name} width={50} />
                         <h1>{contact_selected.name}</h1>
                     </div>
                     <div className="buttons options-wrapper">
-                        <div className="options">
-                            <i class="bi bi-camera-video"></i>
-                            <i class="bi bi-chevron-down"></i>
-                        </div>
-                        <i class="bi bi-search"></i>
-                        <i class="bi bi-three-dots-vertical" onClick={toggleOptions}></i>
+                        <ICONS.Search className="buttons_type" />
+                        <ICONS.Optiopns className="buttons_type" onClick={toggleOptions} />
                         {showOptions && messages.length > 0 && (
                             <ul className="dropdown-menu">
-                                <li onClick={deleteAllMenssages}><i class="bi bi-trash"></i> Eliminar todos</li>
-                                <li>Info. del contacto</li>
-                                <li>Seleccionar mensajes</li>
-                                <li>Silenciar notificaciones</li>
-                                <li>Mensajes Temporales</li>
-                                <li>Añadir a favoritos</li>
-                                <li>Cerrar Chat</li>
-                                <br />
-                                <li>Reportar</li>
-                                <li>Bloquear</li>
-                                <li>Vaciar chat</li>
-                                <li>Eliminar chat</li>
+                                <li onClick={deleteAllMenssages}><ICONS.Trash className="icon-space" /> Vaciar Chats</li>
+                                <li><ICONS.Info className="icon-space" /> Info. del contacto</li>
+                                <li><ICONS.Out className="icon-space" /> Cerrar Chat</li>
                             </ul>
                         )}
                     </div>

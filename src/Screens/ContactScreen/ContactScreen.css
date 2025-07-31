@@ -1,0 +1,249 @@
+.contact_screen{
+    display: flex;
+    flex-direction: row;
+    background-color: #161717;
+} 
+.sidebar_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0;
+    align-items: center;
+    height: 100vh;
+    max-width: 64px;
+    width: 100%;
+    border-right: 1px solid #2a2f32;
+    background-color: #161717;
+    padding:20px 10px;
+    flex-shrink: 0
+}
+.contact_header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: 64px;
+    width: 100%;
+    background-color: #161717;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile_content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.contact_conteiner {
+    display: flex;
+    flex-direction: column;
+    background-color: #161717;
+    padding: 0 15px;
+    height: 100vh;
+    max-width: 410px;
+    width: 100%;
+    border-right: 1px solid #2a2f32;
+    flex-shrink: 0
+}
+
+.profile_conteiner{
+    background-color: #161717;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact_imput_list{
+    display: flex;
+    flex-direction: column;
+    height: 94px;
+    width: 100%;
+    justify-content: space-between;
+}
+.contact_search {
+    display: flex;
+    align-items: center;
+    background-color: #2e2f2f;
+    height: 30px;
+    border-radius: 50px;
+    padding: 0px 12px;
+    margin: 0 0 6px;
+    gap: 10px;
+    color: #aebac1;
+    border: 1px solid transparent;
+    transition: background-color 0.3s, border 0.3s;
+}
+
+.contact_search:focus-within {
+    background-color: #161717;
+    border: 2px solid #21c063;
+}
+
+.search_icon {
+    font-size: 10px;
+    color: #aebac1;
+}
+
+.contact_search input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 15px;
+    flex: 1;
+    caret-color: #21c063;
+}
+
+.contact_filters {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: #161717;
+    border-radius: 8px;
+    gap: 4px;
+    width: fit-content;
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px 16px 15px 0px;
+}
+
+.filter_button {
+    flex: 1;
+    padding: 6px 12px;
+    background-color: transparent;
+    border: 1px solid #aebac1;
+    border-radius: 50px;
+    font-size: 15px;
+    color: #aebac1;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.filter_button:hover {
+    background-color: #103529;
+    color: #ffffff;
+}
+
+.filter_button.active {
+    background-color: #00a884;
+    color: #ffffff;
+}
+
+.title_principal {
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.profile_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 560px;
+    height: 100%;
+}
+
+.img_perfil{
+    width: 320px;
+    height: 188px;
+}
+
+
+
+.contact_first{
+    height: 60px;
+    width: 60px;
+    margin-bottom: 40px;
+    color:#454545;
+}
+
+.title_profile{
+    font-size: 32px;
+    font-weight: 50;
+    color: #fafafa;
+    text-align: center;
+    margin-top: 38px;
+}
+
+.download_text{
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.download_button{
+    background-color: #06cf9c;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 32px;
+    color: rgb(17, 27, 33);
+    padding: 10px 24px;
+    border-radius: 30px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+}
+.secure_text{
+    color: #677882;
+    text-align: center;
+    font-size: 14px;
+    position: absolute;
+    bottom: 14px;
+}
+
+.sidebar_icons_top {
+    background-color: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    color: white;
+}
+
+.sidebar_bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    color: white;
+}
+
+.sidebar_bottom img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+
+}
+
+.icon-button {
+    padding: 8px;
+    border: none;
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+    color: #aebbc2;
+}
+
+.icon-button:hover {
+    background-color: #2e2f2f;
+}
+
+.icon-button svg {
+    width: 24px;
+    height: 24px;
+}

@@ -1,59 +1,44 @@
 .message_wapper{
     display: flex;
     justify-content: flex-end; /* si es emisor, si es receptor tengo que ponerlo a la izquierda */
-
-    
 }
 .message_bubble {
     display: flex;
-    justify-content: space-between;
-	align-items: center;
+    flex-direction: row;
+    justify-content: center;
     background-color: #144d37;
     border-radius: 10px;
-    gap:8px;
+    gap:5px;
     max-width: 80%;
-    padding: 2px 8px;
+    padding: 6px 7px 8px 9px;
     font-weight: 400;
 }
-.message_content{
-    display: flex;
-	
-}
 .message_text{
-    font-size: 12px;
+    font-size: 16px;
     color: white;
 }
-.message_info_conteiner{
+.message_time{
+    font-size: 11px;
+    color: lightgray;
+    font-weight: 200;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 1px;
+    align-items: end;
 }
-
+.message_status{
+    color: #007bfc;
+    display: flex;
+    align-items: end;
+}
+.chechkall{
+    height: 14px;
+    width: 14px;
+}
 .delete_message{
     background-color: transparent;
     border: none;
-    color: red;
+    color: lightgray;
     cursor: pointer;
-    font-size: 10px;
-}
-.message_info{
+    font-size: 11px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.message_time{
-    font-size: 9px;
-    color: lightgray;
-    font-weight: 200;
-}
-
-.message_status{
-    font-size: 20px;
-    color: lightgray;
-}
-
-.message_status .bi-check-all {
-  color: #53bdeb;
-  font-weight: 100;
+    align-items: end;
 }
