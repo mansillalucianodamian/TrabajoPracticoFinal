@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import MessageList from "../../Components/MessageList/MessageList"
 import NewMessageForm from "../../Components/NewMessageForm/NewMessageForm"
-import { useParams } from "react-router"
+import { NavLink, useParams } from "react-router"
 import { getContactById, getContactList } from '../../services/contactService'
 import ContactList from '../../Components/ContactList/ContactList'
 import "./ChatScreen.css"
@@ -64,7 +64,10 @@ const ChatSCreen = () => {
             <div className="message_container">
                 <div className="message_header">
                     <div className="contact_info">
-                        <ICONS.ArrowLeft className="buttons_type button_left" />
+                        <NavLink to="/">
+                            <button className="icon-button-left"><ICONS.ArrowLeft/></button>
+                        </NavLink>
+                        {/* <ICONS.ArrowLeft className="buttons_type button_left" /> */}
                         <img src={contact_selected.avatar} alt={contact_selected.name} width={50} />
                         <h1>{contact_selected.name}</h1>
                     </div>
