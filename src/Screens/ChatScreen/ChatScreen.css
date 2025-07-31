@@ -42,14 +42,27 @@
     font-weight: 200;
     padding: 0 10px;
 }
-.buttons_type{
-    height: 24px;
-    width: 24px;
-}
-.button_left{
-    color: white;
+.icon-button-left {
+    padding: 8px;
+    border: none;
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+    color: #aebbc2;
 }
 
+.icon-button-left:hover {
+    background-color: #2e2f2f;
+}
+
+.icon-button-left svg {
+    width: 24px;
+    height: 24px;
+}
 .message_list {
     flex-grow: 1;
     overflow-y: auto;
