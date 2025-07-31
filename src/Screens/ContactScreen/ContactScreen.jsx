@@ -3,6 +3,7 @@ import { getContactList } from '../../services/contactService';
 import ContactList from '../../Components/ContactList/ContactList';
 import './ContactScreen.css'
 import ICONS from '../../constanst/Icons';
+import { NavLink } from 'react-router';
 
 
 
@@ -15,7 +16,9 @@ const ContactScreen = ({ title = "Contactos", showPerfil = true }) => {
     <div className="contact_screen">
       <div className="sidebar_header">
         <div className="sidebar_icons_top">
-          <button className='icon-button'><ICONS.ChatLeft /></button>
+          <NavLink to={`/contact/${contactsState[0].id}/messages`}>
+            <button className='icon-button'><ICONS.ChatLeft /></button>
+          </NavLink>
           <button className='icon-button'><ICONS.Disc /></button>
           <button className='icon-button'><ICONS.ChatText /></button>
           <button className='icon-button'><ICONS.People /></button>
@@ -55,7 +58,7 @@ const ContactScreen = ({ title = "Contactos", showPerfil = true }) => {
             <h2 className='title_profile'>Descarga WhatsApp para Windows</h2>
             <span className='download_text'>Descarga la aplicación para Windows y haz llamadas, comparte pantalla y disfruta de una experiencia más rápida.</span>
             <button className='download_button'>Descargar</button>
-            <span className='secure_text'> <ICONS.Lock className='lock_icon'/> Tus mensajes personales están cifrados de extremo a extremo.</span>
+            <span className='secure_text'> <ICONS.Lock className='lock_icon' /> Tus mensajes personales están cifrados de extremo a extremo.</span>
           </div>
         </div>)}
     </div>
