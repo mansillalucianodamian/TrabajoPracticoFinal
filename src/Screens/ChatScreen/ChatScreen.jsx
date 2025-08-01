@@ -8,34 +8,34 @@ import "./ChatScreen.css"
 import ICONS from "../../constanst/Icons"
 import ContactScreen from "../ContactScreen/ContactScreen"
 
-
-
-
 const ChatSCreen = () => {
     const { contact_id } = useParams()
-
     const contact_selected = getContactById(contact_id)
-
     const contacts = getContactList()
 
     const [messages, setMessages] = useState([])
+    const [showOptions, setShowOptions] = useState(false)
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 1020)
+
+    const toggleOptions = () => setShowOptions(!showOptions)
+
     useEffect(() => {
         setMessages(contact_selected.messages)
     }, [contact_id])
 
-    const [showOptions, setShowOptions] = useState(false);
-
-    const toggleOptions = () => setShowOptions(!showOptions);
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 1020)
+        }
+        window.addEventListener("resize", handleResize)
+        return () => window.removeEventListener("resize", handleResize)
+    }, [])
 
     const deleteMessageById = (message_id) => {
-        const new_messages_list = []
-        for (const message of messages) {
-            if (message.id !== message_id) {
-                new_messages_list.push(message)
-            }
-        }
+        const new_messages_list = messages.filter(message => message.id !== message_id)
         setMessages(new_messages_list)
     }
+
     const addNewMessage = (text) => {
         const new_message = {
             emisor: "YO",
@@ -44,30 +44,29 @@ const ChatSCreen = () => {
             status: "visto",
             id: messages.length + 1
         }
-        const cloned_menssages_list = [...messages]
-        cloned_menssages_list.push(new_message)
-        setMessages(cloned_menssages_list)
+        setMessages(prev => [...prev, new_message])
     }
+
     const deleteAllMenssages = () => {
         setMessages([])
     }
 
-    const [searchTerm, setSearchTerm] = useState("");
-
+    const [searchTerm, setSearchTerm] = useState("")
     const filteredContacts = contacts.filter(contact =>
         contact.name.toLowerCase().includes(searchTerm.toLowerCase())
-    );
+    )
 
     return (
-        <div className="chat_container">
-            <ContactScreen title="WhatsApp" showPerfil={false} />
+        <div className={`chat_container ${isMobile && contact_id ? "only-chat" : ""}`}>
+            <div className={`contact_screen ${isMobile && contact_id ? "hide" : ""}`}>
+                <ContactScreen title="WhatsApp" showPerfil={false} />
+            </div>
             <div className="message_container">
                 <div className="message_header">
                     <div className="contact_info">
                         <NavLink to="/">
-                            <button className="icon-button-left"><ICONS.ArrowLeft/></button>
+                            <button className="icon-button-left"><ICONS.ArrowLeft /></button>
                         </NavLink>
-                        {/* <ICONS.ArrowLeft className="buttons_type button_left" /> */}
                         <img src={contact_selected.avatar} alt={contact_selected.name} width={50} />
                         <h1>{contact_selected.name}</h1>
                     </div>
@@ -91,8 +90,7 @@ const ChatSCreen = () => {
                 </div>
             </div>
         </div>
-
     )
 }
 
-export default ChatSCreen 
+export default ChatSCreen

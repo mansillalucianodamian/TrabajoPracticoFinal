@@ -16,10 +16,18 @@ const ContactScreen = ({ title = "Contactos", showPerfil = true }) => {
     <div className="contact_screen">
       <div className="sidebar_header">
         <div className="sidebar_icons_top">
-          <NavLink to={`/contact/${contactsState[0].id}/messages`}>
-            <button className='icon-button'><ICONS.ChatLeft /></button>
+          <NavLink
+            to={`/contact/${contactsState[0].id}/messages`}
+            className={({ isActive }) => isActive ? 'icon-button active' : 'icon-button'}
+          >
+            <ICONS.ChatLeft />
           </NavLink>
-          <button className='icon-button'><ICONS.Disc /></button>
+          <NavLink
+            to="/status"
+            className={({ isActive }) => isActive ? 'icon-button active' : 'icon-button'}
+          >
+            <ICONS.Disc />
+          </NavLink>
           <button className='icon-button'><ICONS.ChatText /></button>
           <button className='icon-button'><ICONS.People /></button>
         </div>
