@@ -28,7 +28,12 @@ const ContactScreen = ({ title = "Contactos", showPerfil = true, showContact= tr
           >
             <ICONS.Disc />
           </NavLink>
-          <button className='icon-button'><ICONS.ChatText /></button>
+          <NavLink
+            to="/channels"
+            className={({ isActive }) => isActive ? 'icon-button active' : 'icon-button'}
+          >
+          <ICONS.ChatText />
+          </NavLink>
           <button className='icon-button'><ICONS.People /></button>
         </div>
         <div className="sidebar_bottom">

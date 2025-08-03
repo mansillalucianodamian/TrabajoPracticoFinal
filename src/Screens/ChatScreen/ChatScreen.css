@@ -145,22 +145,6 @@
 
 
 
-/* @media screen and (max-width: 1020px) {
-    .contact_screen {
-        display: none !important;
-    }
-
-    .message_container {
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .icon-button-left {
-    display: inline-block;
-  } */
-
 @media (max-width: 1020px) {
     .contact_screen.hide {
         display: none;

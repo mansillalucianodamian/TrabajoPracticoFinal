@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router'
 import ContactScreen from './Screens/ContactScreen/ContactScreen'
 import ChatSCreen from './Screens/ChatScreen/ChatScreen'
 import StatusScreen from './Screens/StatusScreen/StatusScreen'
+import ChannelScreen from './Screens/ChannelScreen/ChannelScreen'
 
 	
 
@@ -22,6 +23,10 @@ const App = () => {
 			<Route
 			path='/status'
 			element={<StatusScreen/>}
+			/>
+			<Route
+			path='/channels'
+			element={<ChannelScreen/>}
 			/>
 		</Routes>
 			

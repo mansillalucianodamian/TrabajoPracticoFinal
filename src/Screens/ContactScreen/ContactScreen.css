@@ -260,16 +260,43 @@
         display: none;
 
     }
-    .contact_search imput{
+
+    .contact_search imput {
         width: auto;
     }
+
     .sidebar_header {
+        flex-direction: row;
+        height: 64px;
+        width: 100vw;
+        max-width: 100%;
+        border-right: none;
+        border-top: 1px solid #2a2f32;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+        padding: 10px 20px;
+    }
+
+    .sidebar_icons_top {
+        border: none;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+        color: white;
+        max-width: 100%;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .sidebar_bottom {
         display: none;
     }
 
     .contact_conteiner {
         max-width: 100%;
         width: 100%;
-        border-right: none;
     }
 }

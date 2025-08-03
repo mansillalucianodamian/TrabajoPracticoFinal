@@ -10,20 +10,24 @@ const StatusScreen = () => {
       <div className="status_content">
         <div className='status_header'>
           <h2 className='title_principal'>Estados</h2>
-          <div>
+          <div className='icons_estatus'>
             <ICONS.PlusC />
             <ICONS.Optiopns />
           </div>
         </div>
         <div className='status_img'>
-          <img className='avatar' src="/images/messi.webp" alt="" />
+          <img className='avatar_status' src="/images/messi.webp" alt="" />
           <div className='status_text'>
             <span className='text_my_state'>Mi estado</span>
             <span className='text_description'>Haz click para añadir una actualizacion de estado</span>
           </div>
         </div>
         <h3 className='title_text_status'>RECIENTE</h3>
-        
+        <div className='status_text_content'>
+          <ICONS.Disc className='status_icon' />
+          <span className='status_title'>Comparte actualizaciones de estado</span>
+          <span className='status_description'>Aun no posees estados</span>
+        </div>
       </div>
       <div className='status_list'>
         <ICONS.Disc className='status_icon'></ICONS.Disc>
