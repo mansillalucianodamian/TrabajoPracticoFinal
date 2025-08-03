@@ -4,6 +4,7 @@ import ContactScreen from './Screens/ContactScreen/ContactScreen'
 import ChatSCreen from './Screens/ChatScreen/ChatScreen'
 import StatusScreen from './Screens/StatusScreen/StatusScreen'
 import ChannelScreen from './Screens/ChannelScreen/ChannelScreen'
+import CommunityScreen from './Screens/CommunityScreen/CommunityScreen'
 
 	
 
@@ -27,6 +28,10 @@ const App = () => {
 			<Route
 			path='/channels'
 			element={<ChannelScreen/>}
+			/>
+			<Route
+			path='community'
+			element={<CommunityScreen/>}
 			/>
 		</Routes>
 			

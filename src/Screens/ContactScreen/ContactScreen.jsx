@@ -8,7 +8,7 @@ import { NavLink } from 'react-router';
 
 
 
-const ContactScreen = ({ title = "Contactos", showPerfil = true, showContact= true}) => {
+const ContactScreen = ({ title = "Contactos", showPerfil = true, showContact = true }) => {
   const contacts = getContactList()
   const [contactsState, setContactsState] = useState(contacts);
 
@@ -32,9 +32,16 @@ const ContactScreen = ({ title = "Contactos", showPerfil = true, showContact= tr
             to="/channels"
             className={({ isActive }) => isActive ? 'icon-button active' : 'icon-button'}
           >
-          <ICONS.ChatText />
+            <ICONS.ChatText />
           </NavLink>
-          <button className='icon-button'><ICONS.People /></button>
+          <NavLink
+            to="/community"
+            className={({ isActive }) => isActive ? 'icon-button active' : 'icon-button'}
+          >
+            <ICONS.People />
+          </NavLink>
+
+
         </div>
         <div className="sidebar_bottom">
           <button className='icon-button'><ICONS.Gear /></button>
@@ -42,29 +49,29 @@ const ContactScreen = ({ title = "Contactos", showPerfil = true, showContact= tr
         </div>
       </div>
       {showContact && (
-      <div className="contact_conteiner">
-        <div className="contact_header">
-          <h1 className="title_principal">{title}</h1>
-        </div>
-        <div className="contact_imput_list_c">
-          <div className="contact_search">
-            <ICONS.Search className="search_icon" />
-            <input
-              type="text"
-              placeholder="Buscar un chat o iniciar uno nuevo"
-            />
+        <div className="contact_conteiner">
+          <div className="contact_header">
+            <h1 className="title_principal">{title}</h1>
           </div>
-          <div className="contact_filters">
-            <button className="filter_button">Todos</button>
-            <button className="filter_button">No leídos</button>
-            <button className="filter_button">Favoritos</button>
-            <button className="filter_button">Grupos</button>
+          <div className="contact_imput_list_c">
+            <div className="contact_search">
+              <ICONS.Search className="search_icon" />
+              <input
+                type="text"
+                placeholder="Buscar un chat o iniciar uno nuevo"
+              />
+            </div>
+            <div className="contact_filters">
+              <button className="filter_button">Todos</button>
+              <button className="filter_button">No leídos</button>
+              <button className="filter_button">Favoritos</button>
+              <button className="filter_button">Grupos</button>
+            </div>
           </div>
-        </div>
-        <div className='contact_list'>
-          <ContactList contacts={contactsState} />
-        </div>
-      </div>)}
+          <div className='contact_list'>
+            <ContactList contacts={contactsState} />
+          </div>
+        </div>)}
       {showPerfil && (
         <div className='profile_conteiner'>
           <div className='profile_content'>

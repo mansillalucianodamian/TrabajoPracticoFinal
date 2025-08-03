@@ -12,7 +12,7 @@ const ChannelScreen = () => {
                     <h2 className='title_principal'>Canales</h2>
                     <div className='icons_estatus'>
                         <ICONS.PlusC />
-                        <ICONS.Optiopns />
+                
                     </div>
                 </div>
                 <div className='channel_text'>

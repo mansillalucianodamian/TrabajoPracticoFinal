@@ -1,0 +1,16 @@
+.img_community{
+    width: 150px;
+    height: 150px;
+}
+.community_title{
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+.community_description{ 
+    font-size: 16px;
+    font-weight: 400;
+    color:white;
+}

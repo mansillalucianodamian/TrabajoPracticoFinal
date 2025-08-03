@@ -63,7 +63,7 @@
 }
 
 .status_title {
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 50;
     color: #aebac1;
     text-align: center;
@@ -93,7 +93,7 @@
     font-size: 16px;
     color: #21c063;
     margin-top: 20px;
-    font-weight: 200;
+    font-weight: 300;
 }
 .text_my_state{
     font-size: 16px;
