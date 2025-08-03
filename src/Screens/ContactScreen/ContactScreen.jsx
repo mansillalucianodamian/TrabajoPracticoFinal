@@ -8,7 +8,7 @@ import { NavLink } from 'react-router';
 
 
 
-const ContactScreen = ({ title = "Contactos", showPerfil = true }) => {
+const ContactScreen = ({ title = "Contactos", showPerfil = true, showContact= true}) => {
   const contacts = getContactList()
   const [contactsState, setContactsState] = useState(contacts);
 
@@ -33,9 +33,10 @@ const ContactScreen = ({ title = "Contactos", showPerfil = true }) => {
         </div>
         <div className="sidebar_bottom">
           <button className='icon-button'><ICONS.Gear /></button>
-          {/* <img src={contact.avatar} alt={contact.name}/> */}
+          <img src="/images/messi.webp" alt="Messi" className="img_perfil" />
         </div>
       </div>
+      {showContact && (
       <div className="contact_conteiner">
         <div className="contact_header">
           <h1 className="title_principal">{title}</h1>
@@ -58,7 +59,7 @@ const ContactScreen = ({ title = "Contactos", showPerfil = true }) => {
         <div className='contact_list'>
           <ContactList contacts={contactsState} />
         </div>
-      </div>
+      </div>)}
       {showPerfil && (
         <div className='profile_conteiner'>
           <div className='profile_content'>

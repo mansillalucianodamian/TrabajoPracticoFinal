@@ -62,13 +62,6 @@
     align-items: center;
 }
 
-/* .contact_imput_list {
-    display: flex;
-    flex-direction: column;
-    height: 94px;
-    width: 100%;
-    justify-content: space-between;
-} */
 
 .contact_search {
     display: flex;

@@ -3,9 +3,11 @@ import { BsPlusLg, BsGear, BsPeople, BsChatText, BsDisc, BsChatLeftTextFill, BsC
 import { MdLockOutline, MdOutlineLogout, MdSend } from "react-icons/md";
 import { FiArrowLeft } from "react-icons/fi";
 import { IoMdContact } from "react-icons/io";
+import { BiPlusCircle } from "react-icons/bi";
 
 
 const ICONS = {
+    PlusC: BiPlusCircle,
     Lock: MdLockOutline,
     Contact: IoMdContact,
     ArrowLeft: FiArrowLeft,
