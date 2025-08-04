@@ -1,12 +1,57 @@
-# React + Vite
+# Proyecto Programador Web Inicial Front End Developer - UTN
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositorio contiene el proyecto final desarrollado durante el curso de **Desarrollo Front End** dictado por la **UTN (Universidad Tecnológica Nacional)**. El objetivo fue poner en práctica todos los conocimientos adquiridos durante la cursada, desde los fundamentos de HTML y CSS hasta el uso de React.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologías utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **HTML5**  
+- **CSS3 / Flexbox / Grid**  
+- **JavaScript ES6+**  
+- **React.js**  
+- **React Router**  
+- **Vite** (para desarrollo rápido)  
+- **Bootstrap Icons** (íconos)  
+- **Hooks** (useState, useEffect, etc.)  
+- **Componentes reutilizables y lógica de estado compartido**
+- **Vercel**
 
-## Expanding the ESLint configuration
+## 💬 Sobre el proyecto
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Este proyecto simula una aplicación de mensajería (estilo WhatsApp / Telegram), con distintas pantallas como:
+
+- Lista de contactos
+- Pantalla de chat
+- Estados
+- Barra lateral de navegación
+- Manejo de rutas y componentes
+
+La interfaz se adapta a distintos tamaños de pantalla (diseño responsivo) y se trabajó con diseño modular usando componentes y estilos organizados.
+
+## 🎓 Mi experiencia en el curso
+
+Durante el curso aprendí a trabajar de forma profesional con herramientas modernas del ecosistema Front End. Me permitió:
+
+- Entender cómo estructurar una SPA (Single Page Application)
+- Organizar el código en componentes reutilizables
+- Mejorar mi lógica de programación del lado del cliente
+- Trabajar con diseño responsive
+- Comprender el flujo de datos y estados en React
+
+Agradezco al profesor y a los tutores por su acompañamiento, y a mis compañeros por el intercambio y la práctica constante. Este proyecto representa un hito importante en mi formación como desarrollador Front End.
+
+## 📬 Contacto
+
+Si querés ver más de mi trabajo o contactarme:
+
+- GitHub: [https://github.com/mansillalucianodamian/TrabajoPracticoFinal](https://github.com/mansillalucianodamian/TrabajoPracticoFinal)
+- LinkedIn: [https://www.linkedin.com/in/luciano-mansilla/](https://www.linkedin.com/in/luciano-mansilla/)
+
+---
+
+Gracias por visitar este proyecto 🙌
+
+## EXTRA
+
+📡 Deploy en Vercel
+El proyecto fue desplegado en Vercel para facilitar su visualización y prueba online. Vercel permite desplegar aplicaciones frontend de manera rápida y sencilla, integrando directamente con GitHub.
+Podés acceder a la demo en vivo acá: 👉 [https://trabajo-practico-final-22vv.vercel.app/](https://trabajo-practico-final-22vv.vercel.app/)

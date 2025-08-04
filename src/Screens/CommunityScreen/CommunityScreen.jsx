@@ -4,8 +4,8 @@ import ICONS from '../../constanst/Icons'
 import './CommunityScreen.css'
 
 const CommunityScreen = () => {
-  return (
-     <div className='status_conteiner' >
+    return (
+        <div className='status_conteiner' >
             <ContactScreen showPerfil={false} showContact={false} />
             <div className="status_content">
                 <div className='status_header'>

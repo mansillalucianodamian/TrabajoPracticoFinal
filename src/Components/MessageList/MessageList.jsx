@@ -6,7 +6,7 @@ const MessagesList = ({ messages, deleteMessageById }) => {
 	//Tarea para investigar: esto se puede hacer con el algo llamado operador ternario
 
 	if (messages.length === 0) {
-		return <span>Aun no tienes mensajes!</span>
+		return <span className="no_messages">Aun no tienes mensajes!</span>
 	}
 	const lista_mensajes = messages.map(
 		function (message) {
