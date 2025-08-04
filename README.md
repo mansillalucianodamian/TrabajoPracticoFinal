@@ -48,10 +48,10 @@ Si querés ver más de mi trabajo o contactarme:
 
 ---
 
-Gracias por visitar este proyecto 🙌
-
 ## EXTRA
 
 📡 Deploy en Vercel
 El proyecto fue desplegado en Vercel para facilitar su visualización y prueba online. Vercel permite desplegar aplicaciones frontend de manera rápida y sencilla, integrando directamente con GitHub.
 Podés acceder a la demo en vivo acá: 👉 [https://trabajo-practico-final-22vv.vercel.app/](https://trabajo-practico-final-22vv.vercel.app/)
+
+Gracias por visitar este proyecto 🙌

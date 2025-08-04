@@ -63,5 +63,5 @@
 }
 
 .message_wrapper.recibido .delete_message {
-	display: none; /* Ocultar botón en mensajes recibidos */
+	display: none; 
 }
